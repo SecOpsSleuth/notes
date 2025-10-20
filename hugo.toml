@@ -116,12 +116,12 @@ theme = "hugo-blog-awesome"
 
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/hugo-sid"
+url = "https://github.com/SecOpsSleuth"
 
 [[params.socialIcons]]
-name = "twitter"
-url = "https://twitter.com"
+name = "X"
+url = "https://x.com/SecOpsSleuth"
 
-[[params.socialIcons]]
-name = "Rss"
-url = "/index.xml"
+# [[params.socialIcons]]
+# name = "Rss"
+# url = "/index.xml"
