@@ -1,5 +1,5 @@
 title = "Notes.txt"
-baseURL = ''
+baseURL = 'https://secopssleuth.github.io/notes/'
 
 # This is what goes in <html lang="">
 languageCode = 'en-us'
