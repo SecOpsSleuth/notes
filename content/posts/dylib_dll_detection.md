@@ -18,7 +18,7 @@ DLL Hijacking is a technique that takes advantage of a system’s search order t
 * Persistence: the target application might be part of the OS or an innocuously persistent application.
 * Privilege escalation: the injected library is executed with the same privileges as the application. If the application has elevated permissions, these permissions will be inherited by the malicious library.
 
-DLL hijacking is further divided into sub techniques, depending on how the application is configured to load DLLs. Attackers may replace a legitimate DLL, hijacking the search order or drop an malicious DLL in place of a missing (phantom) DLL that the application tries to load (and more). Whilst these all exploit the same principle to load a malicious DLL into legitimate processes, they provide subtly different opportunities for detection.
+DLL hijacking is further divided into sub techniques, depending on how the application is configured to load DLLs. Attackers may replace a legitimate DLL, hijacking the search order or drop a malicious DLL in place of a missing (phantom) DLL that the application tries to load (and more). Whilst these all exploit the same principle to load a malicious DLL into legitimate processes, they provide subtly different opportunities for detection.
 
 Check out the following resources for a more detailed overview of the technique on [Windows](https://www.wietzebeukema.nl/blog/hijacking-dlls-in-windows) and [macOS](https://www.virusbulletin.com/uploads/pdf/magazine/2015/vb201503-dylib-hijacking.pdf).
  
@@ -27,7 +27,7 @@ Check out the following resources for a more detailed overview of the technique 
 ### Classifying hijacking sub-techniques provides detection value
 Each type of DLL hijacking has varying degrees of stealthiness and unique indicators for detection. In the case of DLL replacement, the attacker will have to delete the native DLL. In the case of search order hijacking, two identically named DLLs may be present on the system.
 
-### Stealthyness and assumed priviledge levels
+### Stealthiness and assumed privilege levels
 The more stealthy implementations of DLL hijacking on Windows require a user that already has privileges to write locations higher in the search order, which are usually the protected locations like system32. 
 
 To avoid this problem, in most cases attackers are dropping an executable on the system with the malicious library in the same directory. This is because the directory in which the application is installed is higher in the search order and user writable. DLLs loaded outside of protected locations should always arouse more suspicion, because they don’t require these privileges to be placed there.
@@ -43,7 +43,7 @@ Security tooling must be able to evaluate signature information of the libraries
 However signature information is not a catch all. There are many instances dylib hijacking where both the application and dependency have been signed by the developer or even notorised, such as the [3CX](https://objective-see.org/blog/blog_0x73.html) supply chain attack.
 
 ### Don’t let fear of missing the unknown stop you from detecting the known
-Threat actors are lazy. In the Windows domain, threat actors can be seen abusing the same binaries, and looking for these known cases is better than looking for nothing at all. For example, abuse of [goopdate.dll ](https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/goofy-guineapig/NCSC-MAR-Goofy-Guineapig.pdf). There will always be vulnerable applications that attackers re-use, and talented reverse engineers who to provide high fidelity indicators.
+Threat actors are lazy. In the Windows domain, threat actors can be seen abusing the same binaries, and looking for these known cases is better than looking for nothing at all. For example, abuse of [goopdate.dll](https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/goofy-guineapig/NCSC-MAR-Goofy-Guineapig.pdf). There will always be vulnerable applications that attackers re-use, and talented reverse engineers who to provide high fidelity indicators.
 
 ### Not every theoretical hijack is actually one
 As a detection engineer, DLL hijacking is one of those techniques that feels overwhelming. With every system application being a potential target, and endless third-party applications that will be vulnerable, it feels impossible to have anything resembling coverage.
@@ -64,7 +64,7 @@ Whilst I am generally skeptical of mysterious 'AI' powered detection, this feels
 Consider an EDR with environment wide visibility recording all DLL/dylib loads made by all processes/applications. EDR could then make decisions about whether a library loaded into a specific process should be considered rare across an environment. This primitive is even stronger with visibility of multiple tenants, something analogous to file prevalence, but for DLL loads.
 
 ### The human factor
-Yes DLL/dylib hijacking is a sophisticated technique which presents challenges for detection, particularly around blending in with legitimate noise. But how are users going to be tricked into running these applications in the first place? In the mac ecosystem, these are delivered by installers, again intriducing its own opportunity for detection.
+Yes DLL/dylib hijacking is a sophisticated technique which presents challenges for detection, particularly around blending in with legitimate noise. But how are users going to be tricked into running these applications in the first place? In the mac ecosystem, these are delivered by installers, again introducing its own opportunity for detection.
 
 ### Context
 Dylib hijacking does not need to be detected in a vacuum. Primarily the technique in the wild on macOS is being used as a dropper. The application will go on to download and execute follow-on payloads. These might make suspicious network connections, spawn child processes, write files. The application will likely be added to a persistence location, which when paired with the fact it is theoretically hijackable, or any other detection primitive, may present a more realistic detection criteria.
@@ -81,14 +81,14 @@ Consider:
 | dmg for signed and notarized binary is executed      | User download software all the time      | :red_circle:  |
 | An application theoretically vulnerable to dylib hijacking is installed   | Users can install whatever software they like        | :red_circle:     |
 | A signed application launches an unsigned dylib | Commonly observed for third-party tools | :red_circle: |
-| An application is added to a persistence location | Legitimate software is commonly addeed to persistence locations | :red_circle: |
+| An application is added to a persistence location | Legitimate software is commonly added to persistence locations | :red_circle: |
 | All of the above| :triangular_flag_on_post: | :green_circle: 
 
-Whilst this sounds completely intuitive, I have not personally encountered an implementation of temporal logic in a commercial EDR tool. The main implementations for this instead occur in upstream layers like the SIEM, or tools which try and group clusters of indepedent alerts on a host into incidents. In my experience, this leads to single anomalous alerts being grouped with alerts that probably should have already been suppressed, into ambigious incidents.
+Whilst this sounds completely intuitive, I have not personally encountered an implementation of temporal logic in a commercial EDR tool. The main implementations for this instead occur in upstream layers like the SIEM, or tools which try and group clusters of independent alerts on a host into incidents. In my experience, this leads to single anomalous alerts being grouped with alerts that probably should have already been suppressed, into ambigous incidents.
 
 ## TLDR
 
 * DLL hijacking can be broken into sub-techniques, of varying stealthiness with their own opportunities for detection.
 * In a lot of cases, attackers will drop the legitimate application with the malicious library, rather than exploit applications that are already installed, a technique also seen on macOS.
 * Signing information is important for detection but not a catch all, with many examples of malicious hijacked applications and their dylibs being signed and notorised.
-* Combining a suspicious DLL/dylib with additional context such as any persistence mechanisms, enriched file information and process behaviours is essential to creating a scaleable and high-fidelity detection approach.
+* Combining a suspicious DLL/dylib with additional context such as any persistence mechanisms, enriched file information and process behaviours is essential to creating a scalable and high-fidelity detection approach.
