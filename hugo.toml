@@ -67,7 +67,13 @@ theme = "hugo-blog-awesome"
     name = 'Posts'
     url = '/posts/'
     weight = 20
-  
+
+  [[Languages.en-gb.menu.main]]
+    pageRef = "publications"
+    name = "Publications"
+    url = "/publications/"
+    weight = 30
+
 [Languages.en-gb.params]
   sitename = "SecOpsSleuth"
   defaultColor = "dark" # set color mode: dark, light, auto
@@ -125,3 +131,5 @@ url = "https://x.com/SecOpsSleuth"
 # [[params.socialIcons]]
 # name = "Rss"
 # url = "/index.xml"
+
+publishDir = "docs"
