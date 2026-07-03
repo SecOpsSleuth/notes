@@ -7,6 +7,8 @@ toc = false
 
 | Date | Tags | Title | Link |
 |--------|--------|----------|---------|
+| 2026 | `intel` | *NovaCookies AiTM* | [X](https://x.com/threatinsight/status/2072338466076033073) |
+| 2026 | `AI` | *CursorJack: weaponizing Deeplinks to exploit Cursor IDE* | [Blog](https://www.proofpoint.com/us/blog/threat-insight/cursorjack-weaponizing-deeplinks-exploit-cursor-ide) |
 | 2026 | `intel` | *UNK_BareZilla* | [X](https://x.com/threatinsight/status/2014735721660350758) |
 | 2025 | `cloud` | *Access granted: phishing with device code authorization for account takeover* | [Blog](https://www.proofpoint.com/us/blog/threat-insight/access-granted-phishing-device-code-authorization-account-takeover) |
 | 2025 | `intel`| *UNK_CustomCloak* | [X](https://x.com/threatinsight/status/1976670442799939953) |
