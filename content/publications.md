@@ -7,6 +7,7 @@ toc = false
 
 | Date | Tags | Title | Link |
 |--------|--------|----------|---------|
+| 2026 | `cloud` | *OAuth Client ID Spoofing: Why Fake Client IDs Are Gaining Traction for Stealthy Enumeration* | [Blog](https://www.proofpoint.com/us/blog/threat-insight/oauth-client-id-spoofing-why-fake-client-ids-are-gaining-traction-stealthy) |
 | 2026 | `intel` | *NovaCookies AiTM* | [X](https://x.com/threatinsight/status/2072338466076033073) |
 | 2026 | `AI` | *CursorJack: weaponizing Deeplinks to exploit Cursor IDE* | [Blog](https://www.proofpoint.com/us/blog/threat-insight/cursorjack-weaponizing-deeplinks-exploit-cursor-ide) |
 | 2026 | `intel` | *UNK_BareZilla* | [X](https://x.com/threatinsight/status/2014735721660350758) |
