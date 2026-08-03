@@ -74,6 +74,12 @@ theme = "hugo-blog-awesome"
     url = "/publications/"
     weight = 30
 
+  [[Languages.en-gb.menu.main]]
+    pageRef = "tools"
+    name = "Tools"
+    url = "/tools/"
+    weight = 30
+
 [Languages.en-gb.params]
   sitename = "SecOpsSleuth"
   defaultColor = "dark" # set color mode: dark, light, auto
