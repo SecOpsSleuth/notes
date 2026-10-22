@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-gb"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Tools | Notes.txt</title>
+<meta property="og:title" content="Tools | Notes.txt" />
+<meta name="twitter:title" content="Tools | Notes.txt" />
+<meta itemprop="name" content="Tools | Notes.txt" />
+<meta name="application-name" content="Tools | Notes.txt" />
+<meta property="og:site_name" content="SecOpsSleuth" />
+
+<meta name="description" content="Cloud incident response tools">
+<meta itemprop="description" content="Cloud incident response tools" />
+<meta property="og:description" content="Cloud incident response tools" />
+<meta name="twitter:description" content="Cloud incident response tools" />
+
+<meta property="og:locale" content="en-gb" />
+<meta name="language" content="en-gb" />
+
+  <link rel="alternate" hreflang="en-gb" href="https://secopssleuth.github.io/notes/tools/" title="English" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.153.0">
+
+    
+    <meta property="og:url" content="https://secopssleuth.github.io/notes/tools/">
+  <meta property="og:site_name" content="Notes.txt">
+  <meta property="og:title" content="Tools">
+  <meta property="og:description" content="Cloud incident response tools">
+  <meta property="og:locale" content="en_gb">
+  <meta property="og:type" content="article">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tools">
+  <meta name="twitter:description" content="Cloud incident response tools">
+
+
+    
+
+    <link rel="canonical" href="https://secopssleuth.github.io/notes/tools/">
+    <link href="/notes/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
+    <link href="/notes/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/notes/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/notes/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/notes/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/notes/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/notes/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://secopssleuth.github.io/notes/site.webmanifest">
+
+<meta name="msapplication-config" content="/notes/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/notes/icons/favicon.svg">
+
+    
+    
+    
+</head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/notes/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://secopssleuth.github.io/notes/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/notes/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/notes/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/notes/publications/">
+                        Publications
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/notes/tools/">
+                        Tools
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Tools</h1>
+                
+                
+            </header>
+            
+            <div class="page-content">
+                <p>Cloud incident response tools.</p>
+<h2 id="tools-overview">Tools overview</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Tool</th>
+          <th>Purpose</th>
+          <th>Link</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><a href="/notes/tools/#oneclickevict">OneClickEvict</a></td>
+          <td>Contain, remediate, and restore compromised Microsoft Entra ID accounts</td>
+          <td><em>Private</em></td>
+      </tr>
+      <tr>
+          <td><a href="/notes/tools/#pyhuntkql">PyHuntKQL</a></td>
+          <td>Python-powered threat hunting with KQL superpowers</td>
+          <td><em>Private</em></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="oneclickevict">OneClickEvict</h2>
+<p>Contain, remediate, and restore compromised Microsoft Entra ID accounts.</p>
+<p>Uses Microsoft Graph to automate the response actions for a compromised Entra ID identity. It disables accounts and revokes tokens at scale, uses Conditional Access policies to cover hybrid environments, and tracks remediation through security groups. It also removes malicious inbox rules, registered applications and app consents, and securely resets passwords in bulk.</p>
+<p><img src="/notes/tools/oneclickevict/1-home.png" alt="OneClickEvict home page">
+<em>Home page</em></p>
+<p><img src="/notes/tools/oneclickevict/2-load-users.png" alt="Loading users into OneClickEvict">
+<em>Load users</em></p>
+<p><img src="/notes/tools/oneclickevict/3-contain.png" alt="Configuring and running Contain">
+<em>Configure and run Contain</em></p>
+<p><img src="/notes/tools/oneclickevict/4-remediate.png" alt="Configuring and running Remediate">
+<em>Configure and run Remediate</em></p>
+<p><img src="/notes/tools/oneclickevict/5-restore.png" alt="Configuring and running Restore">
+<em>Configure and run Restore</em></p>
+<p><strong>Link:</strong> <em>Private</em></p>
+<h2 id="pyhuntkql">PyHuntKQL</h2>
+<p>Python-powered threat hunting with KQL superpowers.</p>
+<p>A validated repository of high-quality KQL hunts, including quick-to-deploy packs for incident response. No SIEM is required: it queries Defender tables directly through the Advanced Hunting API and returns only the hunts with matches. Built-in KQL validation and schema checks mean it only issues hunts that can return results, reducing false negatives. Repeatable hunting as code, with no manual hunting time.</p>
+<p><img src="/notes/tools/pyhuntkql/1-home.png" alt="PyHuntKQL home page">
+<em>Homepage</em></p>
+<p><img src="/notes/tools/pyhuntkql/2-query-viewer.png" alt="PyHuntKQL Query Viewer">
+<em>Query Viewer - KQL detection-as-code threat hunting repository</em></p>
+<p><img src="/notes/tools/pyhuntkql/3-go-hunting-setup.png" alt="Go Hunting: OAuth application and query schema">
+<img src="/notes/tools/pyhuntkql/4-go-hunting-configure.png" alt="Go Hunting: configure hunt">
+<em>Go Hunting - register OAuth application, apply KQL schema, configure the queries and hunt</em></p>
+<p><img src="/notes/tools/pyhuntkql/5-analyse-results.png" alt="PyHuntKQL Analyse Results">
+<em>Analyse Results - see only the matches</em></p>
+<p><strong>Link:</strong> <em>Private</em></p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/SecOpsSleuth" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://x.com/SecOpsSleuth" target="_blank" rel="noopener noreferrer me"
+    title="X">
+    <svg viewBox="0 0 1200 1227" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"/>
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2026 SecOpsSleuth.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="https://secopssleuth.github.io/notes/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

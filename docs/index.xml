@@ -102,7 +102,20 @@
           &lt;td&gt;&lt;a href=&#34;https://www.pentestpartners.com/security-blog/direct-memory-access-dma-attacks-risks-techniques-and-mitigations-in-hardware-hacking/&#34;&gt;Blog&lt;/a&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</description>
+&lt;/table&gt;
+&lt;h2 id=&#34;featured-in&#34;&gt;Featured in&lt;/h2&gt;
+&lt;h3 id=&#34;oauth-client-id-spoofing&#34;&gt;OAuth Client ID Spoofing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloudsecurityalliance.org/blog/2026/08/19/the-ghost-applications-how-oauth-client-id-spoofing-enumerates-microsoft-entra-accounts-without-a-successful-sign-in&#34;&gt;Cloud Security Alliance&lt;/a&gt; — &lt;em&gt;&amp;ldquo;The Ghost Applications: How OAuth Client ID Spoofing Enumerates Microsoft Entra Accounts Without a Successful Sign-In&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.infosecurity-magazine.com/news/novel-spoofing-technique-targets/&#34;&gt;Infosecurity Magazine&lt;/a&gt; — &lt;em&gt;&amp;ldquo;Novel OAuth Client ID Spoofing Technique Targets Cloud Environments&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scworld.com/brief/cybercriminals-exploit-oauth-client-id-spoofing-to-bypass-cloud-security&#34;&gt;SC Media&lt;/a&gt; — &lt;em&gt;&amp;ldquo;Cybercriminals Exploit OAuth Client ID Spoofing to Bypass Cloud Security&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cursorjack&#34;&gt;CursorJack&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.infosecurity-magazine.com/news/cursor-jack-attack-path-ai/&#34;&gt;Infosecurity Magazine&lt;/a&gt; — &lt;em&gt;&amp;quot;&amp;lsquo;CursorJack&amp;rsquo; Attack Path Exposes Code Execution Risk in AI Development Environment&amp;quot;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://thehackernews.com/2026/03/threatsday-bulletin-fortigate-raas.html#deep-link-abuse-enables-command-execution&#34;&gt;The Hacker News&lt;/a&gt; — &lt;em&gt;&amp;ldquo;ThreatsDay Bulletin&amp;rdquo;&lt;/em&gt; (Deep Link Abuse Enables Command Execution)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://x.com/TheHackersNews/status/2035020135216685489&#34;&gt;The Hacker News on X&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
       
     </item>
     

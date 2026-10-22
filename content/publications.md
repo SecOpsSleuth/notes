@@ -18,3 +18,15 @@ toc = false
 | 2024 | `dfir` | *BEC-ware the Phish (part 2): Respond and Remediate Incidents in M365* | [Blog](https://www.pentestpartners.com/security-blog/bec-ware-the-phish-part-2-respond-and-remediate-incidents-in-m365/) |
 | 2024 | `dfir` | *BEC-ware the phish (part 1). Investigating Incidents in M365* | [Blog](https://www.pentestpartners.com/security-blog/bec-ware-the-phish-part-1-investigating-incidents-in-m365/) |
 | 2024 | `hardware` | *Direct Memory Access (DMA) attacks. Risks, techniques, and mitigations in hardware hacking* | [Blog](https://www.pentestpartners.com/security-blog/direct-memory-access-dma-attacks-risks-techniques-and-mitigations-in-hardware-hacking/) |
+
+## Featured in
+
+### OAuth Client ID Spoofing
+- [Cloud Security Alliance](https://cloudsecurityalliance.org/blog/2026/08/19/the-ghost-applications-how-oauth-client-id-spoofing-enumerates-microsoft-entra-accounts-without-a-successful-sign-in) — *"The Ghost Applications: How OAuth Client ID Spoofing Enumerates Microsoft Entra Accounts Without a Successful Sign-In"*
+- [Infosecurity Magazine](https://www.infosecurity-magazine.com/news/novel-spoofing-technique-targets/) — *"Novel OAuth Client ID Spoofing Technique Targets Cloud Environments"*
+- [SC Media](https://www.scworld.com/brief/cybercriminals-exploit-oauth-client-id-spoofing-to-bypass-cloud-security) — *"Cybercriminals Exploit OAuth Client ID Spoofing to Bypass Cloud Security"*
+
+### CursorJack
+- [Infosecurity Magazine](https://www.infosecurity-magazine.com/news/cursor-jack-attack-path-ai/) — *"'CursorJack' Attack Path Exposes Code Execution Risk in AI Development Environment"*
+- [The Hacker News](https://thehackernews.com/2026/03/threatsday-bulletin-fortigate-raas.html#deep-link-abuse-enables-command-execution) — *"ThreatsDay Bulletin"* (Deep Link Abuse Enables Command Execution)
+- [The Hacker News on X](https://x.com/TheHackersNews/status/2035020135216685489)
