@@ -19,6 +19,11 @@ Contain, remediate, and restore compromised Microsoft Entra ID accounts.
 
 Uses Microsoft Graph to automate the response actions for a compromised Entra ID identity. It disables accounts and revokes tokens at scale, uses Conditional Access policies to cover hybrid environments, and tracks remediation through security groups. It also removes malicious inbox rules, registered applications and app consents, and securely resets passwords in bulk.
 
+**Link:** *Private*
+
+<details>
+<summary>Screenshots (5)</summary>
+
 ![OneClickEvict home page](oneclickevict/1-home.png)
 *Home page*
 
@@ -34,7 +39,7 @@ Uses Microsoft Graph to automate the response actions for a compromised Entra ID
 ![Configuring and running Restore](oneclickevict/5-restore.png)
 *Configure and run Restore*
 
-**Link:** *Private*
+</details>
 
 ## PyHuntKQL
 
@@ -42,8 +47,13 @@ Python-powered threat hunting with KQL superpowers.
 
 A validated repository of high-quality KQL hunts, including quick-to-deploy packs for incident response. No SIEM is required: it queries Defender tables directly through the Advanced Hunting API and returns only the hunts with matches. Built-in KQL validation and schema checks mean it only issues hunts that can return results, reducing false negatives. Repeatable hunting as code, with no manual hunting time.
 
+**Link:** *Private*
+
+<details>
+<summary>Screenshots (5)</summary>
+
 ![PyHuntKQL home page](pyhuntkql/1-home.png)
-*Homepage*
+*Home page*
 
 ![PyHuntKQL Query Viewer](pyhuntkql/2-query-viewer.png)
 *Query Viewer - KQL detection-as-code threat hunting repository*
@@ -55,4 +65,4 @@ A validated repository of high-quality KQL hunts, including quick-to-deploy pack
 ![PyHuntKQL Analyse Results](pyhuntkql/5-analyse-results.png)
 *Analyse Results - see only the matches*
 
-**Link:** *Private*
+</details>
