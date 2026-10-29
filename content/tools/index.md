@@ -21,6 +21,15 @@ Uses Microsoft Graph to automate the response actions for a compromised Entra ID
 
 **Link:** *Private*
 
+### Demo
+
+<video controls preload="metadata" poster="oneclickevict/1-home.png" style="width:100%">
+  <source src="oneclickevict/one-click-evict-v1.mp4" type="video/mp4">
+  Your browser does not support embedded video.
+</video>
+
+*OneClickEvict walkthrough: load users, contain, remediate and restore*
+
 <details>
 <summary>Screenshots (5)</summary>
 
@@ -48,6 +57,12 @@ Python-powered threat hunting with KQL superpowers.
 A validated repository of high-quality KQL hunts, including quick-to-deploy packs for incident response. No SIEM is required: it queries Defender tables directly through the Advanced Hunting API and returns only the hunts with matches. Built-in KQL validation and schema checks mean it only issues hunts that can return results, reducing false negatives. Repeatable hunting as code, with no manual hunting time.
 
 **Link:** *Private*
+
+### Demo
+
+<!-- Placeholder: replace with a <video> block like OneClickEvict's once the PyHuntKQL demo is recorded -->
+![PyHuntKQL demo placeholder](pyhuntkql/1-home.png)
+*Demo video coming soon*
 
 <details>
 <summary>Screenshots (5)</summary>
